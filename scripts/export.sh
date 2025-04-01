@@ -8,4 +8,4 @@ GOOGLE_DRIVE_FOLDER_ID="${GOOGLE_DRIVE_FOLDER_ID:-1ppT--AjpAddQol6nDXxiDMfhjrc-b
 
 rm -rf exported
 
-go run -C tools ./cmd/exporter/main.go --client-secret $GOOGLE_DRIVE_SECRET --client-token-dir $GOOGLE_DRIVE_TOKEN_DIR --folder-id $GOOGLE_DRIVE_FOLDER_ID --destination $(pwd)/exported
+go run ./cmd/exporter/main.go --client-secret $GOOGLE_DRIVE_SECRET --client-token-dir $GOOGLE_DRIVE_TOKEN_DIR --folder-id $GOOGLE_DRIVE_FOLDER_ID --destination $(pwd)/exported
